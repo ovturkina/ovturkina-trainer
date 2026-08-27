@@ -109,6 +109,14 @@
             50% { opacity: 0; }
         }
 
+        .header-right {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            font-size: 13px;
+            flex-wrap: wrap;
+        }
+
         .header-right a {
             color: var(--accent);
             text-decoration: none;
@@ -175,7 +183,7 @@
             font-size: 11px;
             margin-bottom: 40px;
             user-select: none;
-            text-align: center;
+            /* text-align: center; УДАЛЕНО — разделитель по левому краю */
         }
 
         .section {
@@ -471,6 +479,7 @@
             .logo { font-size: 28px; }
             .header-role { font-size: 12px; }
             .handwritten { font-size: 12px; }
+            .header-right { font-size: 12px; flex-wrap: wrap; }
             .header-right a { font-size: 12px; }
             .tags { gap: 4px; margin-bottom: 24px; }
             .tags a { font-size: 10px; padding: 3px 7px; }
@@ -500,6 +509,7 @@
             .logo { font-size: 24px; }
             .header-role { font-size: 11px; }
             .handwritten { font-size: 11px; }
+            .header-right { font-size: 11px; }
             .header-right a { font-size: 11px; }
             .case-reflection { font-size: 11px; }
         }
@@ -513,11 +523,11 @@
                 <div class="logo">Оксана Туркина<span class="cursor">_</span></div>
                 <div class="header-right">
                     <a href="https://t.me/DarthOx" target="_blank" rel="noopener">@DarthOx</a>
+                    <span class="handwritten">don't be a stranger :)</span>
                 </div>
             </div>
             <div class="header-bottom">
                 <span class="header-role">специалист по обучению и развитию / корпоративный тренер</span>
-                <span class="handwritten">don't be a stranger :)</span>
             </div>
         </div>
     </header>
