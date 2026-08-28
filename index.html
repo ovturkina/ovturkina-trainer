@@ -292,11 +292,10 @@
             content: " →";
         }
 
-        .case-note {
+        .file-note {
             font-size: 12px;
             color: var(--muted);
             margin-bottom: 10px;
-            font-style: italic;
         }
 
         .badge-row {
@@ -381,6 +380,36 @@
             text-decoration: underline;
         }
 
+        .hh-link {
+            margin-top: 20px;
+            border-top: 1px solid var(--line);
+            padding-top: 16px;
+        }
+
+        .hh-link a {
+            font-size: 11px;
+            color: var(--muted);
+            text-decoration: none;
+            transition: color 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .hh-link a:hover {
+            color: var(--accent);
+        }
+
+        .hh-link a .icon {
+            font-size: 12px;
+            transition: transform 0.2s ease;
+            display: inline-block;
+        }
+
+        .hh-link a:hover .icon {
+            transform: translate(1px, -1px);
+        }
+
         footer {
             margin-top: 48px;
             padding: 24px 0 40px;
@@ -461,16 +490,6 @@
         }
         /* ===== КОНЕЦ СТИЛЕЙ ДЛЯ SCRUM ===== */
 
-        /* ===== НОВЫЙ СТИЛЬ ДЛЯ ПОДПИСИ ===== */
-        .file-note {
-            font-size: 12px;
-            color: var(--muted);
-            margin-bottom: 10px;
-            font-style: normal;
-            font-family: 'Segoe Script', 'Apple Chancery', 'Comic Sans MS', cursive;
-        }
-        /* ===== КОНЕЦ НОВОГО СТИЛЯ ===== */
-
         @media (max-width: 600px) {
             body { font-size: 13px; }
             header { padding: 32px 0 20px; margin-bottom: 24px; }
@@ -499,6 +518,7 @@
             .course-item a { font-size: 9px; }
             .course-item .certificate-draft { font-size: 9px; }
             .contact-row { font-size: 12px; }
+            .hh-link a { font-size: 10px; }
             footer { margin-top: 36px; padding: 16px 0 32px; font-size: 10px; }
             .file-note { font-size: 11px; }
         }
@@ -513,6 +533,7 @@
             .header-right { font-size: 11px; }
             .header-right a { font-size: 11px; }
             .file-note { font-size: 10px; }
+            .hh-link a { font-size: 9px; }
         }
     </style>
 </head>
@@ -684,14 +705,11 @@
                 Ярославль
             </div>
 
-            <!-- ===== КНОПКА НА HH.RU ===== -->
-            <div style="margin-top: 20px; border-top: 1px solid var(--line); padding-top: 16px;">
-                <a href="https://hh.ru/resume/..." target="_blank" rel="noopener" 
-                   style="font-size: 11px; color: var(--accent); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); padding: 6px 14px; transition: 0.15s; font-family: inherit;">
-                    <span style="font-size: 13px;">↗</span> Вернуться к резюме на hh.ru
+            <div class="hh-link">
+                <a href="https://hh.ru/resume/..." target="_blank" rel="noopener">
+                    <span class="icon">↗</span> резюме на hh.ru
                 </a>
             </div>
-            <!-- ===== КОНЕЦ КНОПКИ ===== -->
         </div>
 
     </div>
