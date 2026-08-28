@@ -299,14 +299,6 @@
             font-style: italic;
         }
 
-        .case-reflection {
-            font-size: 13px;
-            color: var(--text);
-            margin-top: 12px;
-            margin-bottom: 10px;
-            line-height: 1.7;
-        }
-
         .badge-row {
             display: flex;
             flex-wrap: wrap;
@@ -469,6 +461,16 @@
         }
         /* ===== КОНЕЦ СТИЛЕЙ ДЛЯ SCRUM ===== */
 
+        /* ===== НОВЫЙ СТИЛЬ ДЛЯ ПОДПИСИ ===== */
+        .file-note {
+            font-size: 12px;
+            color: var(--muted);
+            margin-bottom: 10px;
+            font-style: normal;
+            font-family: 'Segoe Script', 'Apple Chancery', 'Comic Sans MS', cursive;
+        }
+        /* ===== КОНЕЦ НОВОГО СТИЛЯ ===== */
+
         @media (max-width: 600px) {
             body { font-size: 13px; }
             header { padding: 32px 0 20px; margin-bottom: 24px; }
@@ -492,13 +494,13 @@
             .case-item .case-subtitle { font-size: 11px; }
             .case-item .case-desc { font-size: 12px; }
             .case-item .case-links a { font-size: 10px; margin-right: 8px; }
-            .case-reflection { font-size: 12px; }
             .badge { font-size: 9px; padding: 2px 8px; }
             .course-item { padding: 12px 14px; font-size: 11px; }
             .course-item a { font-size: 9px; }
             .course-item .certificate-draft { font-size: 9px; }
             .contact-row { font-size: 12px; }
             footer { margin-top: 36px; padding: 16px 0 32px; font-size: 10px; }
+            .file-note { font-size: 11px; }
         }
 
         @media (max-width: 380px) {
@@ -510,7 +512,7 @@
             .handwritten { font-size: 11px; }
             .header-right { font-size: 11px; }
             .header-right a { font-size: 11px; }
-            .case-reflection { font-size: 11px; }
+            .file-note { font-size: 10px; }
         }
     </style>
 </head>
@@ -571,7 +573,7 @@
                     <p>Одним из центральных инструментов курса стал спроектированный мной дневник эмоций. Он предназначен для того, чтобы участники могли регулярно наблюдать за своим состоянием, отслеживать динамику и собирать материал для последующего обращения к психологу.</p>
                     <p>Также спроектировала систему оценки эффективности курса на всех этапах воронки — от первого впечатления и качества выполнения заданий до обращения за консультацией и оценки отложенного эффекта.</p>
                 </div>
-                <p class="case-note">Подробная структура и логика курса — в программе, презентация проекта — в отдельном файле.</p>
+                <p class="file-note">Подробная структура и логика курса — в программе, презентация проекта — в отдельном файле.</p>
                 <div class="case-links">
                     <a href="emotional-intelligence-course.xlsx" target="_blank" rel="noopener">Программа (XLSX)</a>
                     <a href="emotional-intelligence-presentation.pdf" target="_blank" rel="noopener">Презентация (PDF)</a>
@@ -597,9 +599,9 @@
                     <a href="feedback-1.jpg" target="_blank" rel="noopener">Отзыв 1</a>
                     <a href="feedback-2.jpg" target="_blank" rel="noopener">Отзыв 2</a>
                 </div>
-                <p class="case-reflection">
-                    Работа с аудиторией и обратная связь от участников укрепили моё желание развиваться в направлении обучения.
-                </p>
+                <div class="case-desc" style="margin-top: 12px;">
+                    <p>Работа с аудиторией и обратная связь от участников укрепили моё желание развиваться в направлении обучения.</p>
+                </div>
                 <div class="badge-row">
                     <span class="badge"><a href="gratitude-training.pdf" target="_blank" rel="noopener">Благодарность за обучение</a></span>
                 </div>
@@ -681,6 +683,15 @@
                 <a href="https://t.me/DarthOx" target="_blank" rel="noopener">Telegram: @DarthOx</a><br>
                 Ярославль
             </div>
+
+            <!-- ===== КНОПКА НА HH.RU ===== -->
+            <div style="margin-top: 20px; border-top: 1px solid var(--line); padding-top: 16px;">
+                <a href="https://hh.ru/resume/..." target="_blank" rel="noopener" 
+                   style="font-size: 11px; color: var(--accent); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); padding: 6px 14px; transition: 0.15s; font-family: inherit;">
+                    <span style="font-size: 13px;">↗</span> Вернуться к резюме на hh.ru
+                </a>
+            </div>
+            <!-- ===== КОНЕЦ КНОПКИ ===== -->
         </div>
 
     </div>
